@@ -40,6 +40,23 @@
 
 <blockquote>
 <p>Put the following code in your Script area: <pre>&lt;script src="js/instatranslate.js"&gt;&lt;/script&gt;</pre></p>
+
+<p>The code is define as the next if you don't want to download our code: var Enabled=true;
+
+function translate_spanish()
+        {
+            if(Enabled == true)
+              {
+                  document.getElementById('welcome_message').innerHTML = 'Bienvenidos A Nuestro Sitio Web! Intenta traducirme!';
+                  document.getElementById('button_spanish').innerHTML = 'Espa&ntilde;ol';
+                  document.getElementById('button_english').innerHTML = 'Ingles';
+              }else
+                  {
+                      document.getElementById('welcome_message').innerHTML = 'Welcome To Our Website! Try to translate me!';
+                      document.getElementById('button_spanish').innerHTML = 'Spanish';
+                      document.getElementById('button_english').innerHTML = 'English';
+                    }
+        }</p>
 <p>Meaning that your file is under your js folder.</p>
 
 <p>It will call the JavaScript to your website.</p>
