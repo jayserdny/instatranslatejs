@@ -8,10 +8,26 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script>
+    
+    var Enabled=true;
+
+function translate_spanish()
+        {
+            if(Enabled == true)
+              {
+                  document.getElementById('welcome_message').innerHTML = 'Bienvenidos A Nuestro Sitio Web!';
+              }else
+                  {
+                      document.getElementById('welcome_message').innerHTML = 'Welcome To Our Website!';
+                    }
+        }
+
+</script>
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Instatranslatejs</h1>
+      <h1 class="project-name">Instant Translate JS</h1>
       <h2 class="project-tagline"></h2>
       <a href="https://github.com/jayserdny/instatranslatejs" class="btn">View on GitHub</a>
       <a href="https://github.com/jayserdny/instatranslatejs/zipball/master" class="btn">Download .zip</a>
@@ -44,7 +60,7 @@
 <p>Step 2:</p>
 
 <blockquote>
-<p>Copy the following </p>
+<p>Copy the following code into your body: <pre>&lt;button id='translate_spanish' onclick="Enabled=true;translate_spanish();">Spanish</&gt;</pre>/p>
 </blockquote>
 
 <h3>
